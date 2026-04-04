@@ -4,7 +4,7 @@ import { ShoeContext } from "./context/CartContext";
 export default function HomePage() {
   const context = useContext(ShoeContext);
   if (!context) return null;
-  const { products, addToCart, addToWishlist } = context;
+  const { products, addToCart, addToWishlist } = useContext(ShoeContext)!;
   return (
     <div className="p-10 bg-gray-50 min-h-screen">
       <h1 className="text-3xl font-bold mb-8 text-center">Shoe Store</h1>
