@@ -4,7 +4,7 @@ import { ShoeContext } from "../context/CartContext";
 import Image from "next/image";
 
 export default function CartPage ()  {
-  const { cart, removeFromCart } = useContext(ShoeContext);
+  const { cart, removeFromCart } = useContext(ShoeContext)!;
   const total = cart.reduce((acc, item: any) => acc + Number(item.price), 0);
 
   return (
