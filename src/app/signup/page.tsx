@@ -17,12 +17,12 @@ const SignupPage = () => {
       <form onSubmit={handleSignup} className="bg-white p-8 shadow-lg rounded-lg border w-80">
         <h2 className="text-2xl font-bold mb-4 text-center">Sign Up</h2>
         <input 
-          type="email" placeholder="Email" required
+          type="email" placeholder="Type Email Here..." required
           className="w-full p-2 border mb-4 rounded"
           onChange={(e) => setEmail(e.target.value)}
         />
         <input 
-          type="password" placeholder="Password" required
+          type="password" placeholder="Type Password Here..." required
           className="w-full p-2 border mb-4 rounded"
           onChange={(e) => setPassword(e.target.value)}
         />

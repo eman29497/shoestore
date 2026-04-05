@@ -22,14 +22,14 @@ const LoginPage = () => {
         <h1 className="text-xl font-bold mb-4 text-center">Login Page</h1>
         <input 
           type="email" 
-          placeholder="Email likhein" 
+          placeholder="Type Email Here..." 
           className="w-full p-2 border mb-3 rounded"
           onChange={(e) => setEmail(e.target.value)}
           required
         />     
         <input 
           type="password" 
-          placeholder="Password likhein" 
+          placeholder="Type Password Here..." 
           className="w-full p-2 border mb-4 rounded"
           onChange={(e) => setPassword(e.target.value)}
           required
